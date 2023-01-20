@@ -21,6 +21,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Rubik', sans-serif;
+    user-select: none;
     background-color: var(--blue-dark);
 }
 
@@ -142,6 +143,6 @@ main.main__cntnr {
 @supports (scrollbar-color: cyan cyan) {
     * {
         scrollbar-width: thin;
-        scrollbar-color: linear-gradient(to bottom, var(--blue-dark), var(--purple), var(--blue-dark)) var(--blue-dark);
+        scrollbar-color: var(--blue) var(--blue-dark);
     }
 }
