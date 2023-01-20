@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+    <head>
+        <meta charset ="UTF-8">
+        <title>Timedashboard official</title>
+        <meta name ="description" content ="Website for practice difference theme of javascript">
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+        <meta name ="keywords" content ="JavaScript, Css, Html, Practice, Frontend">
+        <meta name ="robots" content ="index,follow">
+        <meta name ="author" content ="Hernan Alvarado">
+        <meta name ="copyright" content ="Hernan Alvarado">
+        <meta name ="og:title" content ="TimeDashboard">
+        <meta name ="og:description" content ="Practice JavaScript">
+        <meta name ="og:image" content ="link">
+        <meta http-equiv ="cache-control" content ="no-control">
+        <link rel ="shortcut icon" href ="favicon.ico" type ="image/x-icon">
+        <link rel ="preconnect" href ="https://fonts.googleapis.com">
+        <link rel ="preconnect" href ="https://fonts.gstatic.com" crossorigin>
+        <link rel ="stylesheet" href ="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap">
+        <link rel ="stylesheet" href ="./css/mobile.css">
+        <link rel ="stylesheet" media ="screen and (min-width: 900px)" href ="./css/desktop.css">
+    </head>
+
+    <body>
+        <main class ="main__cntnr cntnr--flx flx--clmn">
+            <article class="main__user main__article">
+                <figure class ="user__profile cntnr--pddng cntnr--flx flx--rw cntnr--rltv cntnr--rds">
+                    <img class ="user__img" src="./assets/jeremy.png" alt ="image user">
+                    <figcaption class ="cntnr--flx">
+                        <p class ="user__report">Report for</p>
+                        <h1 class ="user__name">Jeremy Robson</h1>
+                    </figcaption>
+                </figure>
+                <section class ="user__date cntnr--pddng cntnr--flx flx--rw flx--jstf-cntr cntnr--rds">
+                    <p class ="user__time">Dayli</p>
+                    <p class ="user__time">Weekly</p>
+                    <p class ="user__time">Monthly</p>
+                </section>
+            </article>
+            <template id ="dashTemplate">
+                <article class ="main__article">
+                    <figure class ="article__back cntnr--rds"></figure>
+                    <section class ="article__dash cntnr--pddng cntnr--flx flx--jstf-cntr cntnr--rltv cntnr--rds">
+                        <figure class ="cntnr--flx flx--rw flx--jstf-btwn">
+                            <figcaption class ="dash__ttl"></figcaption>
+                            <img src="./assets/ellipsis.svg" alt ="icon more">
+                        </figure>
+                        <section class ="cntnr--flx flx--rw flx--jstf-btwn">
+                            <h2 class ="dash__hours"></h2>
+                            <p class ="dash__date clr--pale"></p>
+                        </section>
+                    </section>
+                </article>
+            </template> 
+        </main>
+        <script src ="./model.js" type ="module"></script>
+    </body>
+
+</html>

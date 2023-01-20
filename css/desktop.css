@@ -1,0 +1,48 @@
+@media (min-width: 900px) {
+    body {
+        min-height: 100vh;
+        max-width: 170rem;
+        margin: 0 auto;
+        padding: 5rem 0;
+        display: grid;
+    }
+
+    main.main__cntnr {
+        margin: 0;
+        row-gap: 2.5rem;
+        place-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 2fr));
+    }
+
+    .main__user {
+        height: 100%;
+        grid-row: span 2;
+    }
+
+    .user__time {
+        width: min(90%, 40rem);
+    }
+
+    .user__profile {
+        height: 65%;
+        margin-top: 2rem;
+    }
+
+    .user__date {
+        height: 35%;
+        padding-top: 3rem;
+        row-gap: 2rem;
+        flex-wrap: wrap;
+        translate: 0 -2rem;
+    }
+
+    .article__dash {
+        padding: 2.4rem;
+        row-gap: 1.2rem;
+    }
+
+    .article__back {
+        height: 7rem;
+        translate: 0 2rem;
+    }
+}
